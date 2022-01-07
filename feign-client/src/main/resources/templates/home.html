@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        Id: <span th:text="${book.id}"></span>
+    </div>
+    <div>
+        Name: <span th:text="${book.name}"></span>
+    </div>
+    <div>
+        Pages: <span th:text="${book.pages}"></span>
+    </div>
+    <a th:href="@{'/author/' + ${book.authorId}}">
+        Author: <span th:text="${book.authorId}"></span>
+    </a>
+</body>
+</html>
